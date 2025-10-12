@@ -8,30 +8,19 @@ This module aims to perform **ETL (Extract, Transform, Load)** tasks and **train
 ## Project Structure
 
 ```
-tax-assistant-python/
-?
-??? etl/                          # ETL scripts and functions
-?   ??? extract.py                # fetch data from APIs
-?   ??? transform.py              # cleaning and formatting
-?   ??? load.py                   # final persistence (CSV or DB)
+
+??? etl
+?   ??? extract.py
+?   ??? transform.py
+?   ??? load.py
 ?   ??? __init__.py
-?
-??? ml/                           # machine learning models
-?   ??? train_model.py            # training with Scikit-Learn
-?   ??? evaluate_model.py         # evaluation and metrics
+??? ml
+?   ??? train_model.py
+?   ??? evaluate_model.py
 ?   ??? __init__.py
-?
-??? notebooks/                    # interactive exploration (Jupyter)
-?   ??? exploration.ipynb
-?
-??? data/                         # raw and processed data
-?   ??? raw/
-?   ??? processed/
-?
-??? requirements.txt              # project dependencies
-??? main.py                       # ETL entry point
+??? main.py
+??? .gitignore
 ??? README.md
-```
 
 ---
 
