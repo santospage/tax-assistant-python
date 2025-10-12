@@ -1,6 +1,6 @@
-# Tax Assistant Python
+﻿# Tax Assistant Python
 
-Project **tax-assistant-python** � a data pipeline and machine learning module that complements the **Tax Assistant Spring** APIs.
+Project **tax-assistant-python** — a data pipeline and machine learning module that complements the **Tax Assistant Spring** APIs.
 This module aims to perform **ETL (Extract, Transform, Load)** tasks and **train ML models** to suggest tax mappings based on historical data.
 
 ---
@@ -10,18 +10,18 @@ This module aims to perform **ETL (Extract, Transform, Load)** tasks and **train
 ```
 
 tax-assistant-python/
-??? etl/
-?   ??? extract.py
-?   ??? transform.py
-?   ??? load.py
-?   ??? __init__.py
-??? ml/
-?   ??? train_model.py
-?   ??? evaluate_model.py
-?   ??? __init__.py
-??? main.py
-??? .gitignore
-??? README.md
+├── etl/
+│   ├── extract.py
+│   ├── transform.py
+│   ├── load.py
+│   └── __init__.py
+├── ml/
+│   ├── train_model.py
+│   ├── evaluate_model.py
+│   └── __init__.py
+├── main.py
+├── .gitignore
+└── README.md
 
 ---
 
@@ -61,10 +61,10 @@ pip install -r requirements.txt
 ## Planned Technologies
 
 * **Python**
-* **Pandas** � data manipulation
-* **Requests** � consuming Spring APIs
-* **Scikit-Learn** � machine learning
-* **Jupyter Notebook** � interactive exploration
+* **Pandas** — data manipulation
+* **Requests** — consuming Spring APIs
+* **Scikit-Learn** — machine learning
+* **Jupyter Notebook** — interactive exploration
 
 ---
 
