@@ -1,0 +1,5 @@
+CUSTOMERS_API=https://api.exemplo.com/customers
+PRODUCTS_API=https://api.exemplo.com/products
+SALES_API=https://api.exemplo.com/sales
+FISCAL_API=https://api.exemplo.com/api/fiscal-movements
+INTEGRATED_API=https://api.exemplo.com/api/integratedmovement
