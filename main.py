@@ -1,7 +1,21 @@
-# Entry point for ETL
+﻿from etl.extract import (
+    extract_customers,
+    extract_products,
+    extract_sales,
+    extract_fiscal_movements,
+    extract_integrated_movements,
+)
 
 def main():
-    print("ETL pipeline placeholder")
+    print("🚀 Starting ETL pipeline...")
+
+    extract_customers()
+    extract_products()
+    extract_sales()
+    extract_fiscal_movements()
+    extract_integrated_movements()
+
+    print("✅ ETL process completed successfully!")
 
 if __name__ == "__main__":
     main()

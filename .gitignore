@@ -35,7 +35,7 @@ pip-delete-this-directory.txt
 # Virtual environment
 # ==========================
 venv/
-.env/
+.env
 
 # ==========================
 # Data
@@ -62,3 +62,8 @@ data/processed/
 # ==========================
 .DS_Store
 Thumbs.db
+
+# ==========================
+# Certificates
+# ==========================
+*.pem
