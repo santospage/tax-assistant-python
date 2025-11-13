@@ -1,4 +1,4 @@
-﻿from etl.extract import (
+﻿from src.etl import (
     extract_customers,
     extract_products,
     extract_sales,

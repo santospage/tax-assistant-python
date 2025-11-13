@@ -1,7 +1,7 @@
 ﻿import os
 import json
 import requests
-from etl.auth import get_jwt_token, get_ssl_verify
+from src.etl.auth import get_jwt_token
 
 # API endpoints from environment variables
 CUSTOMERS_API = os.getenv("CUSTOMERS_API")
@@ -10,9 +10,8 @@ SALES_API = os.getenv("SALES_API")
 FISCAL_API = os.getenv("FISCAL_API")
 INTEGRATED_API = os.getenv("INTEGRATED_API")
 
-DATA_PATH = "data/raw"
+DATA_PATH = "src/data/raw"
 PAGE_SIZE = 50
-
 
 def fetch_api_data(api_url, output_filename):
     """Fetch paginated data from an API and save it to a local JSON file."""

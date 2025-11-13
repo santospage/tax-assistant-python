@@ -1,0 +1,232 @@
+[
+  {
+    "companyCode": "D MG 01 ",
+    "taxId": "COF   ",
+    "descriptionTax": "CONTRIBUIÇÃO PARA FINANCIAMENTO DA SEGURIDADE SOCIAL                                                "
+  },
+  {
+    "companyCode": "D MG 01 ",
+    "taxId": "COF001",
+    "descriptionTax": "COFINS RETENÇÃO - CONTRIBUIÇÃO PARA FINANCIAMENTO DA SEGURIDADE SOCIAL                              "
+  },
+  {
+    "companyCode": "D MG 01 ",
+    "taxId": "COFRET",
+    "descriptionTax": "COFINS RETENÇÃO - CONTRIBUIÇÃO PARA FINANCIAMENTO DA SEGURIDADE SOCIAL                              "
+  },
+  {
+    "companyCode": "D MG 01 ",
+    "taxId": "CSL   ",
+    "descriptionTax": "CONTRIBUIÇÃO SOCIAL SOBRE O LUCRO LÍQUIDO                                                           "
+  },
+  {
+    "companyCode": "D MG 01 ",
+    "taxId": "CSL001",
+    "descriptionTax": "CONTRIBUIÇÃO SOCIAL SOBRE O LUCRO LÍQUIDO                                                           "
+  },
+  {
+    "companyCode": "D MG 01 ",
+    "taxId": "ICMS  ",
+    "descriptionTax": "ICMS - Imposto sobre Circulação de Mercadorias e Serviços                                           "
+  },
+  {
+    "companyCode": "D MG 01 ",
+    "taxId": "ICMSST",
+    "descriptionTax": "ICMS SUBSTITUIÇÃO TRIBUTÁRIA                                                                        "
+  },
+  {
+    "companyCode": "D MG 01 ",
+    "taxId": "IPI   ",
+    "descriptionTax": "IPI - Imposto sobre Produtos Industrializados                                                       "
+  },
+  {
+    "companyCode": "D MG 01 ",
+    "taxId": "IRF   ",
+    "descriptionTax": "IMPOSTO DE RENDA RETIDO NA FONTE                                                                    "
+  },
+  {
+    "companyCode": "D MG 01 ",
+    "taxId": "ISS   ",
+    "descriptionTax": "IMPOSTO SOBRE SERVIÇO                                                                               "
+  },
+  {
+    "companyCode": "D MG 01 ",
+    "taxId": "PIS   ",
+    "descriptionTax": "PROGRAMA DE INTEGRAÇÃO SOCIAL                                                                       "
+  },
+  {
+    "companyCode": "D MG 01 ",
+    "taxId": "PIS001",
+    "descriptionTax": "PIS RETENÇÃO - PROGRAMA DE INTEGRAÇÃO SOCIAL                                                        "
+  },
+  {
+    "companyCode": "D MG 01 ",
+    "taxId": "PISRET",
+    "descriptionTax": "PIS RETENÇÃO - PROGRAMA DE INTEGRAÇÃO SOCIAL                                                        "
+  },
+  {
+    "companyCode": "D MG 02 ",
+    "taxId": "IMPCID",
+    "descriptionTax": "CONTRIBUIÇÃO DE INTERVENÇÃO NO DOMÍNIO ECONÔMICO                                                    "
+  },
+  {
+    "companyCode": "D MG 02 ",
+    "taxId": "IMPCOF",
+    "descriptionTax": "COFINS RETENÇÃO - CONTRIBUIÇÃO PARA FINANCIAMENTO DA SEGURIDADE SOCIAL                              "
+  },
+  {
+    "companyCode": "D MG 02 ",
+    "taxId": "IMPIRF",
+    "descriptionTax": "IMPOSTO DE RENDA RETIDO NA FONTE                                                                    "
+  },
+  {
+    "companyCode": "D MG 02 ",
+    "taxId": "IMPISS",
+    "descriptionTax": "IMPOSTO SOBRE SERVIÇO                                                                               "
+  },
+  {
+    "companyCode": "D MG 02 ",
+    "taxId": "IMPPIS",
+    "descriptionTax": "PIS RETENÇÃO - PROGRAMA DE INTEGRAÇÃO SOCIAL                                                        "
+  },
+  {
+    "companyCode": "D RJ 02 ",
+    "taxId": "CBSFED",
+    "descriptionTax": "CBS FEDERAL - Contribuição sobre Bens e Serviços Federal.                                           "
+  },
+  {
+    "companyCode": "D RJ 02 ",
+    "taxId": "COF   ",
+    "descriptionTax": "CONTRIBUIÇÃO PARA FINANCIAMENTO DA SEGURIDADE SOCIAL                                                "
+  },
+  {
+    "companyCode": "D RJ 02 ",
+    "taxId": "COF001",
+    "descriptionTax": "COFINS RETENÇÃO - CONTRIBUIÇÃO PARA FINANCIAMENTO DA SEGURIDADE SOCIAL                              "
+  },
+  {
+    "companyCode": "D RJ 02 ",
+    "taxId": "CSL   ",
+    "descriptionTax": "CONTRIBUIÇÃO SOCIAL SOBRE O LUCRO LÍQUIDO                                                           "
+  },
+  {
+    "companyCode": "D RJ 02 ",
+    "taxId": "CSL001",
+    "descriptionTax": "CONTRIBUIÇÃO SOCIAL SOBRE O LUCRO LÍQUIDO                                                           "
+  },
+  {
+    "companyCode": "D RJ 02 ",
+    "taxId": "DED   ",
+    "descriptionTax": "DEDUÇÃO ICMS / ISS                                                                                  "
+  },
+  {
+    "companyCode": "D RJ 02 ",
+    "taxId": "DIFAL ",
+    "descriptionTax": "DIFAL - DIFERENCIAL DE ALIQUOTA                                                                     "
+  },
+  {
+    "companyCode": "D RJ 02 ",
+    "taxId": "DZFCOF",
+    "descriptionTax": "DESONERAÇÃO DE COFINS POR ISENÇÃO DE IMPOSTO PARA ZONA FRANCA DE MANAUS                             "
+  },
+  {
+    "companyCode": "D RJ 02 ",
+    "taxId": "DZFICM",
+    "descriptionTax": "DESONERAÇÃO DE ICMS POR ISENÇÃO DE IMPOSTO PARA ZONA FRANCA DE MANAUS                               "
+  },
+  {
+    "companyCode": "D RJ 02 ",
+    "taxId": "DZFPIS",
+    "descriptionTax": "DESONERAÇÃO DE PIS POR ISENÇÃO DE IMPOSTO PARA ZONA FRANCA DE MANAUS                                "
+  },
+  {
+    "companyCode": "D RJ 02 ",
+    "taxId": "FECPIC",
+    "descriptionTax": "FECP ICMS - FUNDO DE COMBATE À POBREZA                                                              "
+  },
+  {
+    "companyCode": "D RJ 02 ",
+    "taxId": "IBSEST",
+    "descriptionTax": "IBS ESTADUAL - Imposto sobre Bens e Serviços Estadual.                                              "
+  },
+  {
+    "companyCode": "D RJ 02 ",
+    "taxId": "IBSMUN",
+    "descriptionTax": "IBS MUNICIPAL - Imposto sobre Bens e Serviços Municipal.                                            "
+  },
+  {
+    "companyCode": "D RJ 02 ",
+    "taxId": "ICMS  ",
+    "descriptionTax": "ICMS - Imposto sobre Circulação de Mercadorias e Serviços                                           "
+  },
+  {
+    "companyCode": "D RJ 02 ",
+    "taxId": "ICMSST",
+    "descriptionTax": "ICMS SUBSTITUIÇÃO TRIBUTÁRIA                                                                        "
+  },
+  {
+    "companyCode": "D RJ 02 ",
+    "taxId": "INSS  ",
+    "descriptionTax": "INSS - INSTITUTO NACIONAL DO SEGURO SOCIAL                                                          "
+  },
+  {
+    "companyCode": "D RJ 02 ",
+    "taxId": "IPI   ",
+    "descriptionTax": "IPI - Imposto sobre Produtos Industrializados                                                       "
+  },
+  {
+    "companyCode": "D RJ 02 ",
+    "taxId": "IRF   ",
+    "descriptionTax": "IMPOSTO DE RENDA RETIDO NA FONTE                                                                    "
+  },
+  {
+    "companyCode": "D RJ 02 ",
+    "taxId": "ISS   ",
+    "descriptionTax": "IMPOSTO SOBRE SERVIÇO                                                                               "
+  },
+  {
+    "companyCode": "D RJ 02 ",
+    "taxId": "PIS   ",
+    "descriptionTax": "PROGRAMA DE INTEGRAÇÃO SOCIAL                                                                       "
+  },
+  {
+    "companyCode": "D RJ 02 ",
+    "taxId": "PISRET",
+    "descriptionTax": "PIS RETENÇÃO - PROGRAMA DE INTEGRAÇÃO SOCIAL                                                        "
+  },
+  {
+    "companyCode": "M PR 02 ",
+    "taxId": "FUNRUR",
+    "descriptionTax": "GILRAT - FUNRURAL                                                                                   "
+  },
+  {
+    "companyCode": "M PR 02 ",
+    "taxId": "INSS  ",
+    "descriptionTax": "INSS - INSTITUTO NACIONAL DO SEGURO SOCIAL                                                          "
+  },
+  {
+    "companyCode": "M PR 02 ",
+    "taxId": "SENAR ",
+    "descriptionTax": "SENAR - SERVIÇO NACIONAL DE APRENDIZAGEM RURAL                                                      "
+  },
+  {
+    "companyCode": "X TAF01 ",
+    "taxId": "FUNRUR",
+    "descriptionTax": "GILRAT - FUNRURAL                                                                                   "
+  },
+  {
+    "companyCode": "X TAF01 ",
+    "taxId": "SENAR ",
+    "descriptionTax": "SENAR - SERVIÇO NACIONAL DE APRENDIZAGEM RURAL                                                      "
+  },
+  {
+    "companyCode": "XIFIS05 ",
+    "taxId": "ICMS  ",
+    "descriptionTax": "ICMS - Imposto sobre Circulação de Mercadorias e Serviços                                           "
+  },
+  {
+    "companyCode": "XIFIS05 ",
+    "taxId": "IPI   ",
+    "descriptionTax": "IPI - Imposto sobre Produtos Industrializados                                                       "
+  }
+]

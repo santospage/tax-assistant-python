@@ -9,17 +9,26 @@ This module aims to perform **ETL (Extract, Transform, Load)** tasks and **train
 
 ```
 
-tax-assistant-python/
-├── etl/
-│   ├── extract.py
-│   ├── transform.py
-│   ├── load.py
-│   └── __init__.py
-├── ml/
-│   ├── train_model.py
-│   ├── evaluate_model.py
-│   └── __init__.py
-├── main.py
+tax-assistant-python
+├── src
+│   ├── etl
+│   │   ├── __init__.py
+│   │   ├── extract.py
+│   │   └── auth.py
+│   ├── ml
+│   │   ├── train_model.py
+│   │   └── evaluate_model.py
+│   ├── __init__.py
+│   └── main.py
+├── tests
+│   ├── etl
+│   │   ├── test_extract.py
+│   │   └── test_auth.py
+│   ├── ml
+│   │   ├── test_train_model.py
+│   │   └── test_evaluate_model.py
+│   └── test_main.py
+├── .env
 ├── .gitignore
 └── README.md
 
