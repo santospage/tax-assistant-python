@@ -1,10 +1,22 @@
-# tests/test_main.py
 from unittest.mock import patch
-from src import main
+from src.main import main
 
-@patch("src.main.get_jwt_token", return_value="mocked-token")
-@patch("src.main.extract_data_from_api", return_value=[{"id": 1, "name": "Test"}])
-def test_main_etl_success(mock_extract, mock_token, tmp_path):
-    main.run_etl_pipeline()
-    mock_token.assert_called_once()
-    assert mock_extract.call_count > 0
+@patch("src.main.extract_integrated_movements")
+@patch("src.main.extract_fiscal_movements")
+@patch("src.main.extract_sales")
+@patch("src.main.extract_products")
+@patch("src.main.extract_customers")
+def test_main_calls_extracts(
+    mock_customers,
+    mock_products,
+    mock_sales,
+    mock_fiscal,
+    mock_integrated,
+):
+    main()
+
+    mock_customers.assert_called_once()
+    mock_products.assert_called_once()
+    mock_sales.assert_called_once()
+    mock_fiscal.assert_called_once()
+    mock_integrated.assert_called_once()

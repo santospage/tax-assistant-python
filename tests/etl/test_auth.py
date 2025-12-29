@@ -1,7 +1,8 @@
 # tests/test_auth.py
+import src.etl.auth as auth
 from unittest.mock import Mock
 import requests
-from src import auth
+
 
 def test_get_jwt_token_success(monkeypatch):
     login_api = "https://localhost:8443/api/auth/login"

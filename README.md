@@ -30,6 +30,7 @@ tax-assistant-python
 │   └── test_main.py
 ├── .env
 ├── .gitignore
+├── pytest.ini
 └── README.md
 
 ---
