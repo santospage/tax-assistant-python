@@ -72,12 +72,12 @@ pip install -r requirements.txt
 
 ## Technologies Used
 
-**Python**
-**Pandas** — data manipulation
-**Requests** — consuming Spring APIs
-**Scikit-Learn** — machine learning
-**Pytest** — automated testing
-**Jupyter Notebook** — interactive exploration
+* Python
+* Pandas — data manipulation
+* Requests — consuming Spring APIs
+* Scikit-Learn — machine learning
+* Pytest — automated testing
+* Jupyter Notebook — interactive exploration
 
 ---
 
