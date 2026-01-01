@@ -8,11 +8,11 @@ from ml.predict import predict_fiscal_profile
 def test_predict_fiscal_profile():        
     
     result = predict_fiscal_profile(
-        customer_id='000094', 
-        product_id='000000000000000000000000004LOC'
+        customer_id='000001', 
+        product_id='ESTSE0000000000000000000001303'
     )
     
-    print("Resultado:", result)
+    print("Result:", result)
     assert result is not None    
 
 if __name__ == "__main__":
