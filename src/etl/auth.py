@@ -10,7 +10,7 @@ load_dotenv()
 LOGIN_API = os.getenv("LOGIN_API")
 API_USER = os.getenv("API_USER")
 API_PASSWORD = os.getenv("API_PASSWORD")
-SSL_CERT_PATH = os.getenv("SSL_CERT_PATH", "certs/server-cert.pem")
+SSL_CERT_PATH = os.getenv("SSL_CERT_PATH", "src/certs/server-cert.pem")
 
 _cached_token = None
 

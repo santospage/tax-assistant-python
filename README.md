@@ -9,18 +9,30 @@ This module aims to perform **ETL (Extract, Transform, Load)** tasks and **train
 
 ```
 
-tax-assistant-python/
-├── etl/
-│   ├── extract.py
-│   ├── transform.py
-│   ├── load.py
-│   └── __init__.py
-├── ml/
-│   ├── train_model.py
-│   ├── evaluate_model.py
-│   └── __init__.py
-├── main.py
+tax-assistant-python
+├── src
+│   ├── etl
+│   │   ├── __init__.py
+│   │   ├── extract.py
+│   │   └── auth.py
+│   ├── ml
+│   │   ├── __init__.py
+│   │   ├── simple_tax_predictor.py
+│   │   ├── train_prediction.py
+│   │   └── train_taxes.py
+│   ├── __init__.py
+│   └── main.py
+├── tests
+│   ├── etl
+│   │   ├── test_extract.py
+│   │   └── test_auth.py
+│   ├── ml
+│   │   ├── test_simple_tax_predictor.py
+│   │   └── test_train_taxes.py
+│   └── test_main.py
+├── .env
 ├── .gitignore
+├── pytest.ini
 └── README.md
 
 ---
@@ -58,19 +70,75 @@ pip install -r requirements.txt
 
 ---
 
-## Planned Technologies
+## Technologies Used
 
-* **Python**
-* **Pandas** — data manipulation
-* **Requests** — consuming Spring APIs
-* **Scikit-Learn** — machine learning
-* **Jupyter Notebook** — interactive exploration
+**Python**
+**Pandas** — data manipulation
+**Requests** — consuming Spring APIs
+**Scikit-Learn** — machine learning
+**Pytest** — automated testing
+**Jupyter Notebook** — interactive exploration
 
 ---
 
-## RoadMap
+## Notes
 
-* Implement initial ETL flow (API extraction)
-* Create data transformation pipeline
-* Integrate ML models and training scripts
-* Evaluate performance and metrics
+The ML models are trained using real historical tax data
+Outputs are probabilistic, not absolute
+The quality of predictions depends directly on data volume and consistency
+The module is designed to evolve incrementally alongside the Spring APIs
+
+---
+
+## Return Example
+
+The `predict_taxes` function returns a **list of tax suggestions**, each one representing
+a possible tax mapping with an associated probability and confidence level.
+
+```json
+[
+  {
+    "taxCode": "IBSMUN",
+    "descriptionTax": "IBS MUNICIPAL - Imposto sobre Bens e Serviços Municipal.",
+    "taxAliquot": 0.0,
+    "probability": 0.2,
+    "level": "FULL_PROFILE"
+  },
+  {
+    "taxCode": "IBSMUN",
+    "descriptionTax": "IBS MUNICIPAL - Imposto sobre Bens e Serviços Municipal.",
+    "taxAliquot": 0.0,
+    "probability": 0.2,
+    "level": "PRODUCT_UF"
+  },
+  {
+    "taxCode": "IBSMUN",
+    "descriptionTax": "IBS MUNICIPAL - Imposto sobre Bens e Serviços Municipal.",
+    "taxAliquot": 0.0,
+    "probability": 0.2,
+    "level": "PRODUCT_ONLY"
+  },
+  {
+    "taxCode": "IBSMUN",
+    "descriptionTax": "IBS MUNICIPAL - Imposto sobre Bens e Serviços Municipal.",
+    "taxAliquot": 0.0,
+    "probability": 0.2,
+    "level": "CUSTOMER_UF"
+  },
+  {
+    "taxCode": "IBSMUN",
+    "descriptionTax": "IBS MUNICIPAL - Imposto sobre Bens e Serviços Municipal.",
+    "taxAliquot": 0.0,
+    "probability": 0.2,
+    "level": "GLOBAL"
+  }
+]
+
+### Confidence Levels
+
+- `FULL_PROFILE` – Customer, product, and UF matched
+- `PRODUCT_UF` – Product and UF matched
+- `PRODUCT_ONLY` – Only product matched
+- `CUSTOMER_UF` – Customer and UF matched
+- `GLOBAL` – No specific match, historical global data
+

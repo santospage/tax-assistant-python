@@ -3,3 +3,8 @@ PRODUCTS_API=https://api.exemplo.com/products
 SALES_API=https://api.exemplo.com/sales
 FISCAL_API=https://api.exemplo.com/api/fiscal-movements
 INTEGRATED_API=https://api.exemplo.com/api/integratedmovement
+LOGIN_API=https://api.exemplo.com/api/auth/login
+
+API_USER=user
+API_PASSWORD=password
+SSL_CERT_PATH=certs/certificado.pem
