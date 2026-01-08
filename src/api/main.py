@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Body
+from fastapi import FastAPI, Body, Query
 from typing import List
 
 import pandas as pd
@@ -16,7 +16,11 @@ def health():
     return {"status": "ok"}
 
 @app.post("/predict")
-def predict(payload: dict = Body(...)):
+def predict(
+    payload: dict = Body(...),
+    page: int = Query(0, ge=0),
+    size: int = Query(10, gt=0)
+):
     type_customer = payload.get("typeCustomer")
     type_product = payload.get("typeProduct")
 
@@ -33,7 +37,13 @@ def predict(payload: dict = Body(...)):
         )
     ]
 
-    return filtered[[
+    # ?? PAGINATION
+    start = page * size
+    end = start + size
+
+    paged = filtered.iloc[start:end]
+
+    return paged[[
         "taxCode",
         "descriptionTax",
         "taxAliquot",
