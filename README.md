@@ -11,6 +11,10 @@ This module aims to perform **ETL (Extract, Transform, Load)** tasks and **train
 
 tax-assistant-python
 ├── src
+│   ├── api
+│   │   ├── __init__.py
+│   │   ├── main.py
+│   │   └── schemas.py
 │   ├── etl
 │   │   ├── __init__.py
 │   │   ├── extract.py
@@ -94,6 +98,8 @@ The module is designed to evolve incrementally alongside the Spring APIs
 
 The `predict_taxes` function returns a **list of tax suggestions**, each one representing
 a possible tax mapping with an associated probability and confidence level.
+
+POST /predict
 
 ```json
 [
