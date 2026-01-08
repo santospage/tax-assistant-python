@@ -8,7 +8,7 @@ ANY = "__ANY__"
 
 def load_data():
     if not DATA_PATH.exists():
-        print("⚠️ tax_prediction.csv not found.")
+        print("⚠︝ tax_prediction.csv not found.")
         return pd.DataFrame()
 
     return pd.read_csv(DATA_PATH)
@@ -22,7 +22,7 @@ def _match(col, value):
     return (col == value) | (col == ANY)
 
 
-def predict_taxes(
+def predict_taxes_old(
     type_customer: str,
     type_product: str,
     min_probability: float = 0.0
@@ -77,3 +77,28 @@ def predict_taxes(
             "level"
         ]
     ].to_dict(orient="records")
+
+def predict_taxes(type_customer: str, type_product: str):
+    df = pd.read_csv(DATA_PATH)
+
+    # filtro simples (primeira vers�o)
+    filtered = df[
+        (df["typeCustomer"].isin([type_customer, "__ANY__"])) &
+        (df["typeProduct"].isin([type_product, "__ANY__"]))
+    ]
+
+    if filtered.empty:
+        return []
+
+    # transforma em dict j� no formato do contrato
+    result = []
+    for _, row in filtered.iterrows():
+        result.append({
+            "taxCode": row["taxCode"],
+            "descriptionTax": row["descriptionTax"],
+            "taxAliquot": float(row["taxAliquot"]),
+            "probability": float(row["probability"]),
+            "level": row["level"]
+        })
+
+    return result
